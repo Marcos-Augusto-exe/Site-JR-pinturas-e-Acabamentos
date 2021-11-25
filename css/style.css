@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+           /* Cabeçalho*/
+           
+nav{
+    overflow: hidden;
+    margin: auto;
+    padding: 10px;
+   background-color: rgb(66, 66, 66);
+}
+
+
+    
+
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+      
+}
+
+li{
+    float: left;
+    color: white;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+li:hover{
+    border: solid 2px orangered;
+   padding: 8px;
+    color: orangered;
+    border-radius: 6px;
+}
+
+.logo{
+    padding: 10px;
+    float: left;
+    
+    color: white;
+}
+
+.banner{ 
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    margin: auto;
+    font-size: 5vw;
+    font-family: Birthstone;
+    color: #f3ffff;
+    padding: 20px;
+}
+
+
+       /* Galeria */
+
+#galeria{ 
+    margin: auto;
+    
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding-top: 0;
+}
+.tg{
+    font-size: 4rem;
+    padding: 20px;
+}
+
+   
+   
+    
+
+.img-galeria{
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width:250px;
+    height: 250px;
+    border-radius:50%; 
+}
+.img-galeria:hover{
+    
+    width:250px;
+    height: 250px;
+    border-radius: 0;
+
+}
+
+     /* Pinturas*/
+
+#pinturas{
+margin: auto;
+padding: 20px;
+background-color: gray;
+color: white;
+padding-top: 0;
+
+
+}
+
+.seçao-pinturas{
+    margin-top: 50px;
+    
+}
+
+.pinturas{
+    text-align: center;
+    font-size: 4rem;
+    padding: 20px;
+}
+
+.titulos-pinturas{
+    
+    margin-top: 20px;
+    font-size: 2.8rem;
+    padding: 20px;
+
+}
+.paragrafo-pinturas{
+    text-align: left;
+    font-size: 20px;
+    width: 580px;
+    margin-bottom: 20px;
+
+}
+
+
+.img-pinturas{
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width:350px;
+    height: 190px;
+    
+    
+}
+footer{ 
+    padding: 10px;
+    margin: auto;
+    
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.img-contato{
+    width: 60px;
+}
+
+@media screen and (max-width: 740px) {
+    
+   .menu , li , .logo { 
+       float: none;
+       margin:10px auto;
+       margin-bottom: 0px;
+       text-align: center;
+      
+       
+   }
+   li{
+        border: solid 2px orangered;
+       border-radius: 6px;
+   }
+
+   a{
+       text-decoration: none;
+   }
+
+   .banner{
+       font-size: 5.5vw;
+       padding: 20px;
+   }
+   #pinturas{
+       text-align: center;
+       margin: auto;
+       padding: 20px;
+   }
+   .paragrafo-pinturas{
+       text-align: left;
+       width: 100%;
+       margin-bottom: 30px;
+       font-size: 25px;
+
+   }
+   .img-pinturas{
+       object-fit: cover;
+       width: 80vw;
+   }
+
+}

@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
            /* Cabeçalho*/
            
 nav{
@@ -23,16 +27,21 @@ nav{
 }
 
 li{
-    float: left;
+    
     color: white;
     margin-right: 20px;
-    padding: 10px;
+    padding: 12px;
     font-size: 30px;
+}
+.botoes{  
+    text-decoration: none;
+    float: left;
+
 }
 
 li:hover{
     border: solid 2px orangered;
-   padding: 8px;
+   padding: 10px;
     color: orangered;
     border-radius: 6px;
 }
@@ -104,7 +113,9 @@ padding-top: 0;
 }
 
 .seçao-pinturas{
+    text-align: center;
     margin-top: 50px;
+
     
 }
 
@@ -122,10 +133,12 @@ padding-top: 0;
 
 }
 .paragrafo-pinturas{
-    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 20px;
-    width: 580px;
+    text-align: center;
     margin-bottom: 20px;
+    
 
 }
 
@@ -151,7 +164,24 @@ footer{
     width: 60px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1180px)and (min-width: 880px){
+    .galeria{
+        width: 70%;
+        margin: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width: 780px) {
+    .img-pinturas{
+       object-fit: cover;
+       width: 80%;
+
+}
+
+@media screen and (max-width: 730px) {
     
    .menu , li , .logo { 
        float: none;
@@ -164,9 +194,11 @@ footer{
    li{
         border: solid 2px orangered;
        border-radius: 6px;
+       padding: 10px;
    }
 
-   a{
+   .botoes{
+        float: none;
        text-decoration: none;
    }
 
@@ -181,14 +213,15 @@ footer{
    }
    .paragrafo-pinturas{
        text-align: left;
-       width: 100%;
        margin-bottom: 30px;
        font-size: 25px;
+       padding-right: 5%;
+       padding-left: 5%;
 
    }
    .img-pinturas{
        object-fit: cover;
-       width: 80vw;
+       width: 90%;
    }
 
 }

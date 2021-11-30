@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J.R Pinturas</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./imagens/pngwing.com.png">
 
@@ -19,10 +23,10 @@
         <h2 class="logo">LOGO</h2>
 
 
-        <ul class="menu">
+        <ul class="menu" data-aos="fade-down">
 
             <a class="botoes" href="#">
-                 <li>Home</li>
+                <li>Home</li>
             </a>
 
             <a class="botoes" href="#galeria">
@@ -42,40 +46,56 @@
 
 
     <section>
-        <div class="banner">
+        <div class="banner" data-aos="fade-down">
             <H1 class="bannerh1">J.R</H1>
             <h2 class="banner-h2">Pinturas & Acabamentos</h2>
             <p>Sua casa do seu jeito!</p>
+        </div>
     </section>
-    </div>
 
-    <hr>
-    <div id="galeria">
 
-        <h2 class="tg">
+
+    <div id="galeria" >
+
+        <h2 class="tg"data-aos="fade-up">
             Galeria
         </h2>
 
         <section>
             <div class="galeria">
-                <a href="#cimento-queimado"> <img class="img-galeria" src="./imagens/galeria/cimento.jpg"
-                        alt="pinturas"></a>
-                <a href="#geométrica"><img class="img-galeria" src="./imagens/galeria/geometrico.png"
-                        alt="pinturas"></a>
-                <a href="#marmorização"> <img class="img-galeria" src="./imagens/galeria/marmorizado.jpg"
-                        alt="pinturas"></a>
-                <a href="#fino"> <img class="img-galeria" src="./imagens/galeria/simples.jpg" alt="pinturas"></a>
+                <a href="#cimento-queimado"> <img class="img-galeria" src="./imagens/galeria/cimento.jpg" alt="pinturas"
+                        data-aos="fade-left"></a>
+                <a href="#geométrica"><img class="img-galeria" src="./imagens/galeria/geometrico.png" alt="pinturas"
+                        data-aos="fade-left"></a>
+                <a href="#marmorização"> <img class="img-galeria" src="./imagens/galeria/marmorizado.jpg" alt="pinturas"
+                        data-aos="fade-right"></a>
+                <a href="#fino"> <img class="img-galeria" src="./imagens/galeria/simples.jpg" alt="pinturas"
+                        data-aos="fade-right"></a>
             </div>
         </section>
     </div>
-    <hr>
+
 
     <div id="pinturas">
 
-        <h2 class="pinturas">Pinturas</h2>
+        <h2 class="pinturas" data-aos="fade-up">Pinturas</h2>
+
+        <section id="geométrica" class="seçao-pinturas" data-aos="fade-right">
+            <h3 class="titulos-pinturas">Geométrica </h3>
+            <p class="paragrafo-pinturas">A pintura geométrica é uma ótima opção para quem pretende transformar
+                o visual da
+                casa ou até mesmo do apartamento alugado. Esse tipo de acabamento permite criar uma composição
+                colorida, com direito a figuras geométricas e muito dinamismo.</p>
+
+            <img class="img-pinturas" src="./imagens/acabamentos/geometrica/1.jpg" alt="pinturas">
+            <img class="img-pinturas" src="./imagens/acabamentos/geometrica/2.jpg" alt="pinturas">
+            <img class="img-pinturas" src="./imagens/acabamentos/geometrica/3.jpg" alt="pinturas">
+
+        </section>
 
 
-        <section id="cimento-queimado" class="seçao-pinturas">
+
+        <section id="cimento-queimado" class="seçao-pinturas" data-aos="fade-left">
             <h3 class="titulos-pinturas">Cimento Queimado</h3>
             <p class="paragrafo-pinturas">Está pensando em reformar a casa? A textura de cimento queimado é uma
                 ótima opção
@@ -90,21 +110,8 @@
         </section>
 
 
-        <section id="geométrica" class="seçao-pinturas">
-            <h3 class="titulos-pinturas">Geométrica </h3>
-            <p class="paragrafo-pinturas">A pintura geométrica é uma ótima opção para quem pretende transformar
-                o visual da
-                casa ou até mesmo do apartamento alugado. Esse tipo de acabamento permite criar uma composição
-                colorida, com direito a figuras geométricas e muito dinamismo.</p>
 
-            <img class="img-pinturas" src="./imagens/acabamentos/geometrica/1.jpg" alt="pinturas">
-            <img class="img-pinturas" src="./imagens/acabamentos/geometrica/2.jpg" alt="pinturas">
-            <img class="img-pinturas" src="./imagens/acabamentos/geometrica/3.jpg" alt="pinturas">
-
-        </section>
-
-
-        <section id="marmorização" class="seçao-pinturas">
+        <section id="marmorização" class="seçao-pinturas" data-aos="fade-left">
             <h3 class="titulos-pinturas">Marmorização </h3>
             <p class="paragrafo-pinturas">Marmorização é o processo no qual uma superfície recebe pintura e
                 tratamento para
@@ -121,7 +128,7 @@
         </section>
 
 
-        <section id="fino" class="seçao-pinturas">
+        <section id="fino" class="seçao-pinturas" data-aos="fade-right">
             <h3 class="titulos-pinturas">Fino </h3>
             <p class="paragrafo-pinturas">Para nós o Fino Acabamento representa o incomparável, a perfeição, o
                 charme, pensar
@@ -135,7 +142,7 @@
         </section>
 
     </div>
-    <hr>
+
 
     <footer>
         <div id="contato">
@@ -155,6 +162,17 @@
 
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        }
+        );
+    </script>
+
+
 </body>
 
 </html>

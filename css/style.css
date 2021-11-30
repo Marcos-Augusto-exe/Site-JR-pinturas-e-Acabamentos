@@ -2,17 +2,23 @@
     margin: 0;
     padding: 0;
 }
-
 html{
     scroll-behavior: smooth;
 }
+
+
+
            /* Cabeçalho*/
-           
+  
+body{
+    background-image: linear-gradient(to bottom right,rgb(51, 51, 51), gray)
+}
+
 nav{
     overflow: hidden;
     margin: auto;
     padding: 10px;
-   background-color: rgb(66, 66, 66);
+ 
 }
 
 
@@ -23,6 +29,7 @@ nav{
     padding: 0;
     list-style: none;
     float: right;
+    
       
 }
 
@@ -54,36 +61,42 @@ li:hover{
 }
 
 .banner{ 
-    background-color: rgb(66, 66, 66);
+    margin-top: 100px;
+    margin-bottom:60px;
+    border-bottom:solid 1px rgb(143, 141, 141);
     text-align: center;
-    margin: auto;
     font-size: 5vw;
     font-family: Birthstone;
     color: #f3ffff;
     padding: 20px;
+    padding-bottom: 100px;
 }
 
 
        /* Galeria */
 
 #galeria{ 
-    margin: auto;
     
+    margin-top: 0;
+    margin: auto;
+    margin-bottom: 60px;
     text-align: center;
     padding: 40px;
-    background-color: rgb(105, 105, 105);
     color: white;
     padding-top: 0;
+    padding-bottom: 10%;
+    border-bottom:solid 1px rgb(143, 141, 141);
 }
 .tg{
+      
+    text-align: center;
     font-size: 4rem;
     padding: 20px;
+    margin-bottom: 20px;
+    
 }
 
    
-   
-    
-
 .img-galeria{
     object-fit: cover;
     margin-bottom: 20px;
@@ -91,6 +104,7 @@ li:hover{
     width:250px;
     height: 250px;
     border-radius:50%; 
+   
 }
 .img-galeria:hover{
     
@@ -105,29 +119,38 @@ li:hover{
 #pinturas{
 margin: auto;
 padding: 20px;
-background-color: gray;
+margin-bottom: 20px;
+
 color: white;
 padding-top: 0;
-
+overflow: hidden;
 
 }
 
 .seçao-pinturas{
     text-align: center;
     margin-top: 50px;
+   border: solid 1px rgb(143, 141, 141);
+   border-radius: 6px;
+    margin: auto;
+    margin-bottom: 20px;
+    
 
     
 }
 
 .pinturas{
+    
     text-align: center;
     font-size: 4rem;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .titulos-pinturas{
     
     margin-top: 20px;
+    
     font-size: 2.8rem;
     padding: 20px;
 
@@ -178,6 +201,7 @@ footer{
     .img-pinturas{
        object-fit: cover;
        width: 80%;
+    }
 
 }
 
@@ -223,5 +247,4 @@ footer{
        object-fit: cover;
        width: 90%;
    }
-
 }
